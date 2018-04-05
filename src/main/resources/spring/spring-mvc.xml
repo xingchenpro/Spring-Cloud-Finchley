@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--author:hly
+    date:18:4:5-->
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <context:component-scan base-package="com.myssm.*">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+    </context:component-scan>
+
+    <!-- 视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/view/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <mvc:interceptors>
+        <!-- 登陆拦截器,负责拦截未登录的操作
+        /**的意思是所有文件夹及里面的子文件夹，/*是所有文件夹，不含子文件夹，/是web项目的根目录。 -->
+        <mvc:interceptor>
+            <!-- 需要拦截的地址 -->
+            <mvc:mapping path="/**"/>
+            <!-- 需要排除拦截的地址 -->
+            <mvc:exclude-mapping path="/static/**"/>
+            <bean id="loginInterceptor" class="com.myssm.interceptor.LoginInterceptor">
+                <property name="IGNORE_URI">
+                    <list>
+                        <value>/user/login</value>
+                        <value>/user/logout</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!-- 开启注解模式 -->
+    <mvc:annotation-driven/>
+
+    <!-- 静态资源映射 -->
+    <!--路径后有/会认为是目录,没有认为是文件-->
+    <mvc:resources mapping="/static/**" location="/static/"/>
+    <!--location元素表示webapp目录下的static包下的所有文件；
+    mapping元素表示以/static开头的所有请求路径，如/static/a 或者/static/a/b；-->
+    <mvc:resources location="/static" mapping="/**/*.html"/>
+    <mvc:resources location="/static" mapping="/**/*.js"/>
+    <mvc:resources location="/static" mapping="/**/*.css"/>
+
+    <!-- 配置文件上传 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 默认编码 -->
+        <property name="defaultEncoding" value="utf-8"/>
+        <!-- 文件大小最大值 -->
+        <property name="maxUploadSize" value="10485760000"/>
+        <!-- 内存中的最大值 -->
+        <property name="maxInMemorySize" value="40960"/>
+    </bean>
 
 
 </beans>

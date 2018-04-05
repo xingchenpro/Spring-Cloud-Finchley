@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="mavenssm:war exploded">
-    <output-path>$PROJECT_DIR$/target/webchat</output-path>
+    <output-path>$PROJECT_DIR$/target/myssm</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -58,7 +58,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/webchat/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/myssm/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="mavenssm/web/Web" />
     </root>

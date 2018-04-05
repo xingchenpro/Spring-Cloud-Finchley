@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--author:hly
+    date:18:4:5-->
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
@@ -9,7 +11,7 @@
                         http://www.springframework.org/schema/context/spring-context-4.0.xsd
 
                          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
-    <!-- 这里排除扫描Controller:https://blog.csdn.net/liuwenbo0920/article/details/7260013 -->
+    <!-- 这里排除扫描Controller:https:https://blog.csdn.net/Evan_Leung/article/details/50664939-->
     <context:component-scan base-package="com.myssm.*">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>

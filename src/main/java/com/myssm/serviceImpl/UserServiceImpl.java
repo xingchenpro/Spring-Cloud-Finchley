@@ -6,6 +6,11 @@ import com.myssm.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+
+/**
+ * @author hly
+ * @date 18:4:5
+ */
 @Service(value = "userService")
 public class UserServiceImpl implements UserService {
     @Resource

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.myssm.dao.UserDao">
+    <!--用法解释：https://blog.csdn.net/u011393781/article/details/52414039-->
+    <resultMap id="BaseResultMap" type="com.myssm.model.User">
+        <id column="USERID" property="userid" jdbcType="VARCHAR"/>
+        <result column="PASSWORD" property="password" jdbcType="VARCHAR"/>
+        <result column="NICKNAME" property="nickname" jdbcType="VARCHAR"/>
+        <result column="SEX" property="sex" jdbcType="INTEGER"/>
+        <result column="AGE" property="age" jdbcType="INTEGER"/>
+        <result column="PROFILEHEAD" property="profilehead" jdbcType="VARCHAR"/>
+        <result column="PROFILE" property="profile" jdbcType="VARCHAR"/>
+        <result column="FIRSTTIME" property="firsttime" jdbcType="VARCHAR"/>
+        <result column="LASTTIME" property="lasttime" jdbcType="VARCHAR"/>
+        <result column="STATUS" property="status" jdbcType="INTEGER"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        USERID, PASSWORD, NICKNAME, SEX, AGE, PROFILEHEAD, PROFILE, FIRSTTIME, LASTTIME, STATUS
+    </sql>
+    <!--用法：https://www.cnblogs.com/hpuiotcl/p/6908238.html-->
+    <!-- 根据用户id查询用户 -->
+    <select id="selectUserByUserid" resultMap="BaseResultMap" parameterType="string">
+        SELECT <include refid="Base_Column_List"/>
+        FROM [user]
+        WHERE USERID = #{userid, jdbcType=VARCHAR}
+    </select>
+</mapper>

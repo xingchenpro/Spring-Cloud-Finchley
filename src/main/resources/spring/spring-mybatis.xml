@@ -2,19 +2,23 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    <!--自动扫描包？-->
-    <context:component-scan base-package="*">
-        <!-- &lt;!&ndash; 这里排除扫描Controller &ndash;&gt;
-         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+
+                         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!-- 这里排除扫描Controller:https://blog.csdn.net/liuwenbo0920/article/details/7260013 -->
+    <context:component-scan base-package="com.myssm.*">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
+
     <!-- 引入jdbc配置文件 -->
-    <!--classpath 路径在每个J2ee项目中都会用到，即WEB-INF下面的classes目录，所有src目录下面的java、xml、properties等文件编译后都会在此，
-所以在开发时常将相应的xml配置文件放于src或其子目录下；
-       引用classpath路径下的文件，只需在文件名前加classpath:(需保证该文件确实位于classpath路径下);-->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="classpath:config/jdbc.properties"/>
     </bean>
+
     <!-- 配置数据源 -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${driver}"/>
@@ -32,24 +36,33 @@
         <!--获取连接最大等待时间 -->
         <property name="maxWait" value="${maxWait}"/>
     </bean>
+
     <!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!-- 引入数据源 -->
-        <property name="dataSource" ref="dataSource" />
+        <property name="dataSource" ref="dataSource"/>
         <!-- 自动扫描mapping.xml文件 -->
-        <property name="mapperLocations" value="classpath:mapping/*.xml"/>
+        <property name="mapperLocations" value="classpath:com/myssm/mapping/*.xml"/>
     </bean>
+
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="dao" />
+        <property name="basePackage" value="com.myssm.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
+    <!--采用实体dao调用方式调用，在dao里面可以用注解@Resource(name="sqlSessionTemplate")方式得到或用ao继承SQLSessionDaoSupport再采用setter方式对dao进行注入-->
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg ref="sqlSessionFactory">
+        </constructor-arg>
+    </bean>
 
-    <!-- 开启事务 -->
+    <!-- 开启事务,事物管理器 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource" />
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
 
+    <!-- 开启@Transactional实现注解事务 -->
+    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
 
 </beans>

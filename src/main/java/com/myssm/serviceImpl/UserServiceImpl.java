@@ -17,8 +17,8 @@ public class UserServiceImpl implements UserService {
     @Resource
     private UserDao userDao;
     @Override
-    public List<User> selectAll(int page, int pageSize) {
-        return userDao.selectAll(page, pageSize);
+    public List<User> selectAll() {
+        return userDao.selectAll();
     }
 
     @Override

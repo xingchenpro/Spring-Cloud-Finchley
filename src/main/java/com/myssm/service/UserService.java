@@ -9,7 +9,7 @@ import java.util.List;
  * time:18;4;5
  */
 public interface UserService {
-    List<User> selectAll(int page, int pageSize);
+    List<User> selectAll();
     User selectUserByUserid(String userid);
     boolean insert(User user);
     boolean update(User user);

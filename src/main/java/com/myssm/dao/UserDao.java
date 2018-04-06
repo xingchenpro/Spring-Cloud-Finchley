@@ -17,7 +17,7 @@ import java.util.List;
  */
 @Service(value = "userDao")
 public interface UserDao {
-    List<User> selectAll(@Param("offset") int offset, @Param("limit") int limit);
+    List<User> selectAll();
     User selectUserByUserid(String userid);
     boolean insert(User user);
 

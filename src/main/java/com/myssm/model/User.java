@@ -19,6 +19,21 @@ public class User {
     private String lasttime;    //最后登录时间
     private int status;      //账号状态(1正常 0禁用)
 
+    public User() {
+    }
+
+    public User(String userid, String password, String nickname, int sex, int age, String profilehead, String profile, String firsttime, String lasttime, int status) {
+        this.userid = userid;
+        this.password = password;
+        this.nickname = nickname;
+        this.sex = sex;
+        this.age = age;
+        this.profilehead = profilehead;
+        this.profile = profile;
+        this.firsttime = firsttime;
+        this.lasttime = lasttime;
+        this.status = status;
+    }
 
     public String getUserid() {
         return userid;

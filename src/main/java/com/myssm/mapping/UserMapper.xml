@@ -20,8 +20,62 @@
     <!--用法：https://www.cnblogs.com/hpuiotcl/p/6908238.html-->
     <!-- 根据用户id查询用户 -->
     <select id="selectUserByUserid" resultMap="BaseResultMap" parameterType="string">
-        SELECT <include refid="Base_Column_List"/>
+        SELECT
+        <include refid="Base_Column_List"/>
         FROM [user]
         WHERE USERID = #{userid, jdbcType=VARCHAR}
+    </select>
+    <!--插入用户-->
+    <insert id="insert" parameterType="com.myssm.model.User">
+        INSERT INTO [user] (
+        <include refid="Base_Column_List"/>
+        ) VALUES (#{userid, jdbcType=VARCHAR}, #{password, jdbcType=VARCHAR}, #{nickname, jdbcType=VARCHAR},
+        #{sex, jdbcType=INTEGER},
+        #{age, jdbcType=INTEGER}, #{profilehead, jdbcType=VARCHAR}, #{profile, jdbcType=VARCHAR},
+        #{firsttime, jdbcType=VARCHAR}, #{lasttime, jdbcType=VARCHAR}, #{status, jdbcType=INTEGER})
+    </insert>
+
+    <!-- 更新用户 -->
+    <update id="update" parameterType="com.myssm.model.User">
+        UPDATE [user]
+        <set>
+            <if test="password != null and password != ''">
+                PASSWORD = #{password, jdbcType=VARCHAR},
+            </if>
+            <if test="nickname != null and nickname != ''">
+                NICKNAME = #{nickname, jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null and sex != ''">
+                SEX = #{sex, jdbcType=INTEGER},
+            </if>
+            <if test="age != null and age != ''">
+                AGE = #{age, jdbcType=INTEGER},
+            </if>
+            <if test="profilehead != null and profilehead != ''">
+                PROFILEHEAD = #{profilehead, jdbcType=VARCHAR},
+            </if>
+            <if test="profile != null and profile != ''">
+                PROFILE = #{profile, jdbcType=VARCHAR},
+            </if>
+            <if test="firsttime != null and firsttime != ''">
+                FIRSTTIME = #{firsttime, jdbcType=VARCHAR},
+            </if>
+            <if test="lasttime != null and lasttime != ''">
+                LASTTIME = #{lasttime, jdbcType=VARCHAR},
+            </if>
+            <if test="status != null and status != ''">
+                STATUS = #{status, jdbcType=INTEGER},
+            </if>
+        </set>
+        WHERE USERID = #{userid, jdbcType=VARCHAR}
+    </update>
+    <!-- 删除用户 -->
+    <delete id="delete" parameterType="string">
+        DELETE FROM [user]
+        WHERE USERID = #{userid, jdbcType=VARCHAR}
+    </delete>
+    <!-- 查询所有用户 -->
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT  * FROM [user]
     </select>
 </mapper>

@@ -76,6 +76,6 @@
     </delete>
     <!-- 查询所有用户 -->
     <select id="selectAll" resultMap="BaseResultMap">
-        SELECT  * FROM [user]
+        SELECT * FROM [user]
     </select>
 </mapper>

@@ -2,12 +2,16 @@
 <!--author:hly
     date:18:4:5-->
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
-
-    <context:component-scan base-package="com.myssm.*">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+    <context:component-scan base-package="com.myssm.controller">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
     </context:component-scan>
@@ -18,24 +22,6 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <mvc:interceptors>
-        <!-- 登陆拦截器,负责拦截未登录的操作
-        /**的意思是所有文件夹及里面的子文件夹，/*是所有文件夹，不含子文件夹，/是web项目的根目录。 -->
-        <mvc:interceptor>
-            <!-- 需要拦截的地址 -->
-            <mvc:mapping path="/**"/>
-            <!-- 需要排除拦截的地址 -->
-            <mvc:exclude-mapping path="/static/**"/>
-            <bean id="loginInterceptor" class="com.myssm.interceptor.LoginInterceptor">
-                <property name="IGNORE_URI">
-                    <list>
-                        <value>/user/login</value>
-                        <value>/user/logout</value>
-                    </list>
-                </property>
-            </bean>
-        </mvc:interceptor>
-    </mvc:interceptors>
 
     <!-- 开启注解模式 -->
     <mvc:annotation-driven/>
@@ -48,6 +34,8 @@
     <mvc:resources location="/static" mapping="/**/*.html"/>
     <mvc:resources location="/static" mapping="/**/*.js"/>
     <mvc:resources location="/static" mapping="/**/*.css"/>
+    <mvc:resources location="/static" mapping="/**/*.jpg"/>
+
 
     <!-- 配置文件上传 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

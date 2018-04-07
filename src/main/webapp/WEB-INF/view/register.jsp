@@ -1,21 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%--
+  Created by IntelliJ IDEA.
+  User: hly
+  Date: 2018/4/6
+  Time: 22:58
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%String path = request.getContextPath();%>
+<!DOCTYPE html>
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>jQuery带背景切换登录注册表单</title>
-    <link rel="stylesheet" href="../css/Login_Register_style.css"/>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/common.js"></script>
+    <title>Title</title>
+    <link rel="stylesheet" href="<%=path%>/static/source/css/Login_Register_style.css" />
+    <script src="<%=path%>/static/source/js/jquery.min.js"></script>
+    <script  src="<%=path%>/static/source/js/common.js"></script>
     <!--背景图片自动更换-->
-    <script src="../js/supersized.3.2.7.min.js"></script>
-    <script src="../js/supersized-init.js"></script>
+   <%-- <script  src="<%=path%>/static/source/js/supersized.3.2.7.min.js"></script>
+    <script  src="<%=path%>/static/source/js/supersized-init.js"></script>--%>
     <!--表单验证-->
-    <script src="../js/jquery.validate.min.js?var1.14.0"></script>
+    <script src="<%=path%>/static/source/js/jquery.validate.min.js"></script>
 </head>
 <body>
-
 <div class="register-container">
     <h1>ShareLink</h1>
 
@@ -46,14 +52,10 @@
 
         <button id="submit" type="submit">注 册</button>
     </form>
-    <a href="index.html">
+    <a href="../../static/source/index.html">
         <button type="button" class="register-tis">已经有账号？</button>
     </a>
 
 </div>
-
-
-
-
 </body>
 </html>

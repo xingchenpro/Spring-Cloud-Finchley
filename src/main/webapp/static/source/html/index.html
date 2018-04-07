@@ -5,8 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>jQuery带背景切换登录注册表单</title>
 
-<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/Login_Register_style.css" />
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+	<!--背景图片自动更换-->
+	<script src="../js/supersized.3.2.7.min.js"></script>
+	<script src="../js/supersized-init.js"></script>
+	<!--表单验证-->
+	<script src="../js/jquery.validate.min.js"></script>
 
+</head>
 <body>
 
 <div class="login-container">
@@ -17,9 +25,13 @@
 	</div>
 	
 	<form action="" method="post" id="loginForm">
+		<!--autocomplete：其含义代表是否让浏览器自动记录之前输入的值
+		http://www.w3school.com.cn/html5/att_form_autocomplete.asp-->
 		<div>
 			<input type="text" name="username" class="username" placeholder="用户名" autocomplete="off"/>
 		</div>
+		<!--onpaste:粘贴文本操作
+		oncontextmenu：点击鼠标右键操作-->
 		<div>
 			<input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" onpaste="return false" />
 		</div>
@@ -32,13 +44,6 @@
 
 </div>
 
-<script src="../js/jquery.min.js"></script>
-<script src="../js/common.js"></script>
-<!--背景图片自动更换-->
-<script src="../js/supersized.3.2.7.min.js"></script>
-<script src="../js/supersized-init.js"></script>
-<!--表单验证-->
-<script src="../js/jquery.validate.min.js?var1.14.0"></script>
 
 </body>
 </html>

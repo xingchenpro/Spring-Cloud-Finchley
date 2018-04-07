@@ -16,6 +16,6 @@ use MyDataBase
 INSERT INTO [user] VALUES('admin','123','hly',1,27,'a','b','2018','2018',1)
 select*from [user]
 
---使用说明数据库名字为MyDateBase；表如上；
+--使用说明:数据库名字为MyDateBase；表如上；
 
 

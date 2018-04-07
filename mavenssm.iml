@@ -32,6 +32,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.25" level="project" />
     <orderEntry type="library" name="Maven: com.microsoft.sqlserver:sqljdbc4:4.0" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.jtds:jtds:1.2.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-websocket:4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-messaging:4.2.4.RELEASE" level="project" />

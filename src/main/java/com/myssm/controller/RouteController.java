@@ -19,7 +19,6 @@ public class RouteController {
     public String index() {
         return "redirect:/user/login";
     }
-
     @RequestMapping(value = "/about")
     public String about() {
         return "about";

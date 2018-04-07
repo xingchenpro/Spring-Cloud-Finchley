@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <%String path = request.getContextPath();%>
 <!doctype html>
 <html>
@@ -9,22 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/static/source/css/Login_Register_style.css" />
     <script src="/static/source/js/jquery-2.1.4.min.js"></script>
-    <%--<script  src="/static/source/js/common.js"></script>--%>
+    <script  src="/static/source/js/common.js"></script>
     <%--<script  src="/static/source/js/layer.js"></script>--%>
 
     <!--背景图片自动更换-->
     <%--<script  src="../../static/source/js/supersized.3.2.7.min.js"></script>
     <script  src="../../static/source/js/supersized-init.js"></script>--%>
     <!--表单验证-->
-  <%--  <script src="/static/source/js/jquery.validate.min.js"></script>--%>
+   <script src="/static/source/js/jquery.validate.min.js"></script>
 </head>
 <body>
 
 <div class="login-container">
-    <h1>ssm框架注册登录</h1>
+    <h1>SSM框架登录</h1>
 
     <div class="connect">
-        <p>https://gitee.com/Sirius_hly/mavenssm</p>
+        <p>git地址:https://gitee.com/Sirius_hly/mavenssm</p>
     </div>
 
     <form action="<%=path%>/user/login" method="post" id="loginForm" >
@@ -42,10 +43,11 @@
        <%-- <button id="submit" type="submit">登 陆</button>--%>
         <input type="submit" id="submit" value="Login" >
     </form>
-
-    <a href="register.jsp">
+    <%--${ctx}获取当前根目录--%>
+    <a href="${ctx}/user/register"><button type="button" class="register-tis">还有没有账号？</button></a>
+   <%-- <a href="register.jsp">
         <button type="button" class="register-tis">还有没有账号？</button>
-    </a>
+    </a>--%>
 
 </div>
 

@@ -25,9 +25,9 @@ public class test {
         //userService.delete("admin");
         user.setPassword("666");
         userService.update(user);
-        System.out.println("用户信息:" + user.toString());
-        User us = new User("hly", "233", "y", 1, 1, "111", "111", "111", "111", 1);
-        userService.insert(us);*/
+        System.out.println("用户信息:" + user.toString());*/
+        User us = new User("y", "233", "y", 1, 1, "111", "111", "111", "111", 1);
+        userService.insert(us);
         List<User> users = userService.selectAll();
         for (User user3 : users)
             System.out.println(user3.toString());

@@ -29,4 +29,8 @@ public class DefinedMessage {
     public String LOG_DETAIL_UPDATE_PROFILEHEAD = "更新用户头像";
     public String LOG_DETAIL_SYSCONFIG = "系统设置";
     public String LOG_DETAIL_UPDATE_PASSWORD = "更新密码";
+
+    public String REGISTER_EXIT="用户已存在";//用户已存在
+    public String REGISTER_SUCCESSFUL="注册成功";//注册成功
+
 }

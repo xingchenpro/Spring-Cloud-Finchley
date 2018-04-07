@@ -37,7 +37,7 @@ public class LoginController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     /**
-     * 和jsp参数不一致可以用@ModelAttribute("username") String userid来接收，详情看书
+     * 和jsp参数不一致可以用@ModelAttribute("username") String userid来接收
      */
     public String login(@ModelAttribute("username") String userid, String password, DefinedMessage definedMessage, RedirectAttributes attributes,
                         HttpServletRequest request, HttpSession session, ModelMap map) {
@@ -60,11 +60,12 @@ public class LoginController {
                  */
                 //session.setAttribute("userid", userid);
                 //session.setAttribute("login_status", true);
-                attributes.addFlashAttribute("message", definedMessage.LOGIN_SUCCESS);
-                return "redirect:/register";
+                attributes.addFlashAttribute("error", userid);
+                return "redirect:/index";
             }
         }
     }
+
 }
 
 

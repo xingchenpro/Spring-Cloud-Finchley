@@ -8,16 +8,16 @@
     <title>Title</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="/static/source/css/Login_Register_style.css" />
-    <script src="/static/source/js/jquery-2.1.4.min.js"></script>
-    <script  src="/static/source/js/common.js"></script>
+    <link rel="stylesheet" href="<%=path%>/static/source/css/Login_Register_style.css" />
+    <script src="<%=path%>/static/source/js/jquery-2.1.4.min.js"></script>
+    <script  src="<%=path%>/static/source/js/common.js"></script>
     <%--<script  src="/static/source/js/layer.js"></script>--%>
 
     <!--背景图片自动更换-->
     <%--<script  src="../../static/source/js/supersized.3.2.7.min.js"></script>
     <script  src="../../static/source/js/supersized-init.js"></script>--%>
     <!--表单验证-->
-   <script src="/static/source/js/jquery.validate.min.js"></script>
+   <script src="<%=path%>/static/source/js/jquery.validate.min.js"></script>
 </head>
 <body>
 

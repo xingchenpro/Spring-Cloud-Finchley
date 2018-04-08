@@ -56,26 +56,32 @@ public class RegisterController {
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public String register(String username, String password, String phone_number, String email, DefinedMessage definedMessage, RedirectAttributes attributes,
                            HttpServletRequest request, HttpSession session, ModelMap map) {
-        User user = userService.selectUserByUserid(username);
         /**
          * 这里要抛出异常
          */
         try {
+            User user = userService.selectUserByUserid(username);
             if (user.getUserid() != null) {
                 attributes.addFlashAttribute("error", definedMessage.REGISTER_EXIT);
                 return "redirect:/user/register";
             }
-        }catch (Exception e){
+            else{
+                attributes.addFlashAttribute("error", username);
+                User newUser = new User(username, password, username, 1, 1, "1", "1", "1", "1", 1);
+                //newUser.setUserid(username);
+                //newUser.setPassword(password);
+                userService.insert(newUser);
+                return "redirect:/index";
+            }
         }
-        finally {
-            attributes.addFlashAttribute("error", username);
-            User newUser = new User(username, password, username, 1, 1, "1", "1", "1", "1", 1);
-            //newUser.setUserid(username);
-            //newUser.setPassword(password);
-            userService.insert(newUser);
-            return "redirect:/index";
+        catch (Exception e){
         }
-
+        attributes.addFlashAttribute("error", username);
+        User newUser = new User(username, password, username, 1, 1, "1", "1", "1", "1", 1);
+        //newUser.setUserid(username);
+        //newUser.setPassword(password);
+        userService.insert(newUser);
+        return "redirect:/index";
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)

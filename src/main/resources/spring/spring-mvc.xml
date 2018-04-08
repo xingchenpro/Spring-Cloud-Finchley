@@ -31,10 +31,10 @@
     <mvc:resources mapping="/static/**" location="/static/"/>
     <!--location元素表示webapp目录下的static包下的所有文件；
     mapping元素表示以/static开头的所有请求路径，如/static/a 或者/static/a/b；-->
-    <mvc:resources location="/static" mapping="/**/*.html"/>
-    <mvc:resources location="/static" mapping="/**/*.js"/>
-    <mvc:resources location="/static" mapping="/**/*.css"/>
-    <mvc:resources location="/static" mapping="/**/*.jpg"/>
+    <mvc:resources location="/" mapping="/**/*.html"/>
+    <mvc:resources location="/" mapping="/**/*.js"/>
+    <mvc:resources location="/" mapping="/**/*.css"/>
+    <mvc:resources location="/" mapping="/**/*.jpg"/>
 
 
     <!-- 配置文件上传 -->

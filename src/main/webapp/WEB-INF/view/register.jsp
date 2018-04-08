@@ -17,6 +17,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="<%=path%>/static/source/css/Login_Register_style.css" />
     <script src="<%=path%>/static/source/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="<%=path%>/static/source/css/Login_Register_style.css" />
     <script  src="<%=path%>/static/source/js/common.js"></script>
     <!--背景图片自动更换-->
    <%-- <script  src="<%=path%>/static/source/js/supersized.3.2.7.min.js"></script>
@@ -32,7 +33,7 @@
         <p>git地址:https://gitee.com/Sirius_hly/mavenssm</p>
     </div>
 
-    <form action="<%=path%>/user/register" method="post"id="RegisterForm">
+    <form action="${ctx}/user/register" method="post"id="RegisterForm">
         <div>
             <input type="text" name="username" id="username" class="username" placeholder="您的用户名" autocomplete="off"/>
         </div>

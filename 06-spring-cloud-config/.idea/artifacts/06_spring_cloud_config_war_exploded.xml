@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="06-spring-cloud-config:war exploded">
+    <output-path>$PROJECT_DIR$/target/06-spring-cloud-config</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="06-spring-cloud-config" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/06-spring-cloud-config/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="06-spring-cloud-config/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      # uri: http://localhost:8769
+      fail-fast: true
+      discovery:
+        # 从配置中心读取文件。
+        enabled: true
+        #  配置中心的servieId，即服务名
+        service-id: config-server
+  profiles:
+    # 这里使用的是配置中心的dev环境所以这里的端口无效
+    active: dev
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8889/eureka/
+server:
+  port: 8770

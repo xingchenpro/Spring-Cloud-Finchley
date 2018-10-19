@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="02-spring-cloud-rest-ribbon:war exploded">
+    <output-path>$PROJECT_DIR$/target/02-spring-cloud-rest-ribbon</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="02-spring-cloud-rest-ribbon" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/02-spring-cloud-rest-ribbon/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="02-spring-cloud-rest-ribbon/web/Web" />
+    </root>
+  </artifact>
+</component>

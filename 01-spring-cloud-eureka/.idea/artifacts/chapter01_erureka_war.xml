@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="chapter01-erureka:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="com.hly.war">
+      <element id="artifact" artifact-name="chapter01-erureka:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="02-spring-cloud-rest-ribbon:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="02-spring-cloud-rest-ribbon.war">
+      <element id="artifact" artifact-name="02-spring-cloud-rest-ribbon:war exploded" />
+    </root>
+  </artifact>
+</component>

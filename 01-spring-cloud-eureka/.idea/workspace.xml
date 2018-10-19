@@ -143,8 +143,8 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-31" />
-    <option name="y" value="52" />
+    <option name="x" value="579" />
+    <option name="y" value="56" />
     <option name="width" value="1885" />
     <option name="height" value="1043" />
   </component>
@@ -170,67 +170,6 @@
               <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
               <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hly" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hly" type="462c0819:PsiDirectoryNode" />
-              <item name="eurekaClient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -242,7 +181,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -412,16 +351,15 @@
       <updated>1539917165024</updated>
       <workItem from="1539917170311" duration="31000" />
       <workItem from="1539917271444" duration="1874000" />
-      <workItem from="1539919207318" duration="2026000" />
+      <workItem from="1539919207318" duration="2703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3931000" />
+    <option name="totallyTimeSpent" value="4608000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-31" y="52" width="1885" height="1043" extended-state="0" />
-    <editor active="true" />
+    <frame x="579" y="56" width="1885" height="1043" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -434,10 +372,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44880953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25289896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25289896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />

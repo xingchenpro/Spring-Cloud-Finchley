@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="03-spring-cloud-feign:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="03-spring-cloud-feign.war">
+      <element id="artifact" artifact-name="03-spring-cloud-feign:war exploded" />
+    </root>
+  </artifact>
+</component>

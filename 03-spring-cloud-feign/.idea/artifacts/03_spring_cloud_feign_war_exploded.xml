@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="03-spring-cloud-feign:war exploded">
+    <output-path>$PROJECT_DIR$/target/03-spring-cloud-feign</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="03-spring-cloud-feign" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/03-spring-cloud-feign/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="03-spring-cloud-feign/web/Web" />
+    </root>
+  </artifact>
+</component>

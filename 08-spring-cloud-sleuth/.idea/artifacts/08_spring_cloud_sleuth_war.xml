@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="08-spring-cloud-sleuth:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="08-spring-cloud-sleuth.war">
+      <element id="artifact" artifact-name="08-spring-cloud-sleuth:war exploded" />
+    </root>
+  </artifact>
+</component>

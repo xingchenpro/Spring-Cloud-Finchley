@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="08-spring-cloud-sleuth" />
+        <module name="service-sleuth-hello" />
+        <module name="service-sleuth-hi" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="08-spring-cloud-sleuth" target="1.8" />
+      <module name="service-sleuth-hello" target="1.8" />
+      <module name="service-sleuth-hi" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,6 +1,5 @@
-package com.hly.serviceFeignHystrix.service;
+package com.hly.serviceFeignClient.service;
 
-import com.hly.serviceFeignHystrix.service.impl.SchedualServiceHiHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -10,12 +9,13 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author :hly
  * @github :github.com/SiriusHly
  * @blog :blog.csdn.net/Sirius_hly
- * @date :2018/10/16
+ * @date :2018/10/20
  */
-//服务名指定调用哪个服务
-@FeignClient(value = "service-client",fallback = SchedualServiceHiHystrix.class)
-public interface SchedualServiceHi {
+@FeignClient(value = "SERVICE-CLIENT",fallback = com.hly.serviceFeignClient.service.impl.HelloServiceImpl.class)
+public interface HelloService {
+
     //这里的映射名和需要调用的服务的映射名一样
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
-    String sayHiFromClientOne(@RequestParam(value = "name") String name);
+    String HiServiceClient(@RequestParam(value = "name")String name);
+
 }

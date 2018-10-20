@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="09-spring-cloud-hystrix-dashboard:war exploded">
+    <output-path>$PROJECT_DIR$/target/09-spring-cloud-hystrix-dashboard</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="09-spring-cloud-hystrix-dashboard" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/09-spring-cloud-hystrix-dashboard/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="09-spring-cloud-hystrix-dashboard/web/Web" />
+    </root>
+  </artifact>
+</component>

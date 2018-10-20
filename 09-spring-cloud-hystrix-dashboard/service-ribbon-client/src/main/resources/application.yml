@@ -7,12 +7,3 @@ server:
 spring:
   application:
     name: service-ribbon
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-      cors:
-        allowed-origins: "*"
-        allowed-methods: "*"

@@ -19,6 +19,7 @@
       <module name="service-feign-client" target="1.8" />
       <module name="service-ribbon-client" target="1.8" />
       <module name="service-server" target="1.8" />
+      <module name="service-turbine" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

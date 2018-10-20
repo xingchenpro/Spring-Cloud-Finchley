@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/10-spring-cloud-turbine.iml" filepath="$PROJECT_DIR$/10-spring-cloud-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-client-hello/service-client-hello.iml" filepath="$PROJECT_DIR$/service-client-hello/service-client-hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-client-hi/service-client-hi.iml" filepath="$PROJECT_DIR$/service-client-hi/service-client-hi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-server/service-server.iml" filepath="$PROJECT_DIR$/service-server/service-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-turbine/service-turbine.iml" filepath="$PROJECT_DIR$/service-turbine/service-turbine.iml" />
+    </modules>
+  </component>
+</project>

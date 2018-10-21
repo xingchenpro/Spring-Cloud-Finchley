@@ -15,3 +15,4 @@ zuul:
     api-b:
       path: /api-b/**
       serviceId: service-client-hello
+

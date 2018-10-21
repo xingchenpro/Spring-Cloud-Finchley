@@ -10,6 +10,7 @@ spring:
     active: native
   application:
     name: config-server
+
 eureka:
   client:
     service-url:

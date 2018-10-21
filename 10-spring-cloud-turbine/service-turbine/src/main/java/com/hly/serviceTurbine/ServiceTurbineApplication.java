@@ -8,7 +8,6 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
 @EnableTurbine
 public class ServiceTurbineApplication {
 
-
 	/**
 	 * 1.依次启动 service-server,service-client-hi,service-client-hello,service-turbine
 	 * 2.访问：http://localhost:8764/turbine.stream

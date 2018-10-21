@@ -19,7 +19,6 @@ public class ServiceClientApplication {
 
 	@Value("${server.port}")
 	String port;
-
 	@RequestMapping("/hello")
 	public String home(@RequestParam(value = "name", defaultValue = "hly") String name) {
 		return "hi " + name + " ,i am from port:" + port;

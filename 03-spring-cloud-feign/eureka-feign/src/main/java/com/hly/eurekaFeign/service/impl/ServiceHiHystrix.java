@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @date :2018/10/17
  */
 @Component
-public class SchedualServiceHiHystrix implements SchedualServiceHi {
+public class ServiceHiHystrix implements SchedualServiceHi {
     @Override
     public String sayHiFromClientOne(String name) {
         return "sorry"+name;

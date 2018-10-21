@@ -8,6 +8,7 @@ spring:
   application:
     name: service-feign
 
+# 开启熔断
 feign:
   hystrix:
     enabled : true

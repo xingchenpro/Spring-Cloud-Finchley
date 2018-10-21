@@ -29,4 +29,3 @@
 #### [6.SpringCloud | 配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/bc2ea196566776)
 
 
-### QQ交流群:865061230

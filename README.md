@@ -27,5 +27,6 @@
 #### [4.SpringCloud | 熔断(Hystrix)](http://www.edrawsoft.cn/viewer/public/s/228e9412456944)
 #### [5.SpringCloud | 路由网关(Zuul)](http://www.edrawsoft.cn/viewer/public/s/0128f695888967)
 #### [6.SpringCloud | 配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/bc2ea196566776)
-
+#### [7.SpringCloud | 高可用配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/17082272979823)
+#### [8.SpringCloud | 服务链路追踪(Sleuth)](http://www.edrawsoft.cn/viewer/public/s/82e3e763059503)
 

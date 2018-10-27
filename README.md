@@ -17,16 +17,16 @@
 
 ### SpringCloud概念:
 
-#### [1.微服务概念及SpringCloud各组件](http://www.edrawsoft.cn/viewer/public/s/3906d082909597)
+#### [1.微服务概念及SpringCloud各组件](http://www.edrawsoft.cn/viewer/public/s/3c2dd848468311)
 
 ### SpringCloud思维导图笔记:
 
-#### [1.SpringCloud | 服务注册与发现(Eureka)](http://www.edrawsoft.cn/viewer/public/s/d8ad5184137612)
-#### [2.SpringCloud | 负载均衡(RestTemplate+Ribbon)](http://www.edrawsoft.cn/viewer/public/s/daa6c751350974)
-#### [3.SpringCloud | 负载均衡(Feign)](http://www.edrawsoft.cn/viewer/public/s/ba9f9249470314)
-#### [4.SpringCloud | 熔断(Hystrix)](http://www.edrawsoft.cn/viewer/public/s/228e9412456944)
-#### [5.SpringCloud | 路由网关(Zuul)](http://www.edrawsoft.cn/viewer/public/s/0128f695888967)
-#### [6.SpringCloud | 配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/bc2ea196566776)
-#### [7.SpringCloud | 高可用配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/17082272979823)
-#### [8.SpringCloud | 服务链路追踪(Sleuth)](http://www.edrawsoft.cn/viewer/public/s/82e3e763059503)
+#### [1.SpringCloud | 服务注册与发现(Eureka)](http://www.edrawsoft.cn/viewer/public/s/43806287606036)
+#### [2.SpringCloud | 负载均衡(RestTemplate+Ribbon)](http://www.edrawsoft.cn/viewer/public/s/b4b29105766934)
+#### [3.SpringCloud | 负载均衡(Feign)](http://www.edrawsoft.cn/viewer/public/s/60217538565296)
+#### [4.SpringCloud | 熔断(Hystrix)](http://www.edrawsoft.cn/viewer/public/s/bdf70366150725)
+#### [5.SpringCloud | 路由网关(Zuul)](http://www.edrawsoft.cn/viewer/public/s/c57de342025174)
+#### [6.SpringCloud | 配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/a1a94166495405)
+#### [7.SpringCloud | 高可用配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/ee14e108025417)
+#### [8.SpringCloud | 服务链路追踪(Sleuth)](http://www.edrawsoft.cn/viewer/public/s/1a532751491483)
 

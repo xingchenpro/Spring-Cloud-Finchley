@@ -23,10 +23,10 @@
 
 #### [1.SpringCloud | 服务注册与发现(Eureka)](http://www.edrawsoft.cn/viewer/public/s/43806287606036)
 #### [2.SpringCloud | 负载均衡(RestTemplate+Ribbon)](http://www.edrawsoft.cn/viewer/public/s/b4b29105766934)
-#### [3.SpringCloud | 负载均衡(Feign)](http://www.edrawsoft.cn/viewer/public/s/60217538565296)
-#### [4.SpringCloud | 熔断(Hystrix)](http://www.edrawsoft.cn/viewer/public/s/bdf70366150725)
+#### [3.SpringCloud | 负载均衡(Feign)](http://www.edrawsoft.cn/viewer/public/s/46fc8039597823)
+#### [4.SpringCloud | 熔断(Hystrix)](http://www.edrawsoft.cn/viewer/public/s/701f1855694397)
 #### [5.SpringCloud | 路由网关(Zuul)](http://www.edrawsoft.cn/viewer/public/s/c57de342025174)
 #### [6.SpringCloud | 配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/a1a94166495405)
-#### [7.SpringCloud | 高可用配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/ee14e108025417)
-#### [8.SpringCloud | 服务链路追踪(Sleuth)](http://www.edrawsoft.cn/viewer/public/s/1a532751491483)
+#### [7.SpringCloud | 高可用配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/6b0bc198302204)
+#### [8.SpringCloud | 服务链路追踪(Sleuth)](http://www.edrawsoft.cn/viewer/public/s/7d640323938379)
 

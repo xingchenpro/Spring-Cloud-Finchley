@@ -1,6 +1,6 @@
 # Spring-Cloud-Finchley
 
-## SpringCloud技术栈最新版本(Finchley版本)知识整理:
+## SpringCloud技术栈最新版本(Finchley版本)
 
 #### 01-spring-cloud-eureka | 服务注册与发现
 #### 02-spring-cloud-rest-ribbon | 负载均衡(ribbon)

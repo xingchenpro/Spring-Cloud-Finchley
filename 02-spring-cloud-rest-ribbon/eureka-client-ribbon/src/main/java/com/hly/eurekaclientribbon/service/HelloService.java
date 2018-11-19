@@ -18,7 +18,6 @@ public class HelloService {
     @Autowired
     RestTemplate restTemplate;
 
-
     public String hiService(String name) {
         //调用该方法，做了负载均衡，访问不同端口的实例
         return restTemplate.getForObject("http://EUREKA-CLIENT/hello?name="+name,String.class);

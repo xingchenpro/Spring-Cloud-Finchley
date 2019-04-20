@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/12-spring-cloud-oauth2-micro-service.iml" filepath="$PROJECT_DIR$/12-spring-cloud-oauth2-micro-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client-service/client-service.iml" filepath="$PROJECT_DIR$/client-service/client-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth-service/oauth-service.iml" filepath="$PROJECT_DIR$/oauth-service/oauth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-service/server-service.iml" filepath="$PROJECT_DIR$/server-service/server-service.iml" />
+    </modules>
+  </component>
+</project>

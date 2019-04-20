@@ -22,3 +22,10 @@ http://localhost:8080/oauth/token?username=user_1&password=123456&grant_type=pas
 
 token:
 http://localhost:8080/article/1?access_token=
+
+服务资源配置
+https://blog.csdn.net/wuzhiwei549/article/details/79815491
+
+//自定义返回信息
+https://my.oschina.net/merryyou/blog/1819572
+

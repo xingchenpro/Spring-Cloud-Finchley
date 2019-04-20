@@ -62,12 +62,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected UserDetailsService userDetailsService(){
         BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
-//        password 方案一：明文存储，用于测试，不能用于生产
-//        String finalPassword = "123456";
-//        password 方案二：用 BCrypt 对密码编码
+//      用 BCrypt 对密码编码
         String finalPassword = bCryptPasswordEncoder.encode("123456");
-        // password 方案三：支持多种编码，通过密码的前缀区分编码方式
-        // String finalPassword = "{bcrypt}"+bCryptPasswordEncoder.encode("123456");
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
         manager.createUser(User.withUsername("user_1").password(finalPassword).authorities("USER").build());
         manager.createUser(User.withUsername("user_2").password(finalPassword).authorities("USER").build());

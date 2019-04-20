@@ -1,5 +1,6 @@
 package com.hly.oauthService.config;
 
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -26,7 +27,8 @@ import org.springframework.security.oauth2.provider.token.store.InMemoryTokenSto
 @Configuration
 public class OAuth2ServerConfig {
 
-    private static final String DEMO_RESOURCE_ID = "article";
+    private static final String ARTICLE_RESOURCE_ID = "article";
+    private static final String VIDEO_RESOURCE_ID = "video";
 
     @Configuration
     @EnableResourceServer
@@ -34,16 +36,21 @@ public class OAuth2ServerConfig {
 
         @Override
         public void configure(ResourceServerSecurityConfigurer resources) {
-            resources.resourceId(DEMO_RESOURCE_ID).stateless(true);
+            //resources
+            //标记以指示在这些资源上仅允许基于令牌的身份验证
+                   // .resourceId(ARTICLE_RESOURCE_ID).stateless(true)
+                   // .resourceId(VIDEO_RESOURCE_ID).stateless(true);
         }
 
         @Override
         public void configure(HttpSecurity http) throws Exception {
+            //访问控制，必须通过token认证过后才可以访问
             http
                     .authorizeRequests()
-                    .antMatchers("/article/**").authenticated();//配置article访问控制，必须认证过后才可以访问
+                    .antMatchers("/article/**","/video/**").authenticated();
         }
     }
+
     @Configuration
     @EnableAuthorizationServer
     protected static class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
@@ -51,22 +58,23 @@ public class OAuth2ServerConfig {
         @Autowired
         AuthenticationManager authenticationManager;
 
-
-
         @Override
+
         public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 
             String finalSecret = new BCryptPasswordEncoder().encode("123456");
 
-            clients.inMemory().withClient("client_1")
-                    .resourceIds(DEMO_RESOURCE_ID)
+            clients.inMemory()
+                    .withClient("client_1")
+                    //客户端模式
+                    //.resourceIds(ARTICLE_RESOURCE_ID,VIDEO_RESOURCE_ID)
                     .authorizedGrantTypes("client_credentials", "refresh_token")
-                    .scopes("select")
+                    .scopes("select")//权限范围
                     .authorities("oauth2")
                     .secret(finalSecret)
-
+                    //密码模式
                     .and().withClient("client_2")
-                    .resourceIds(DEMO_RESOURCE_ID)
+                    //.resourceIds(ARTICLE_RESOURCE_ID,VIDEO_RESOURCE_ID)
                     .authorizedGrantTypes("password", "refresh_token")
                     .scopes("select")
                     .authorities("oauth2")
@@ -74,6 +82,7 @@ public class OAuth2ServerConfig {
         }
 
         @Override
+
         public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
             endpoints
                     .tokenStore(new InMemoryTokenStore())
@@ -89,5 +98,4 @@ public class OAuth2ServerConfig {
             oauthServer.allowFormAuthenticationForClients();
         }
     }
-
 }

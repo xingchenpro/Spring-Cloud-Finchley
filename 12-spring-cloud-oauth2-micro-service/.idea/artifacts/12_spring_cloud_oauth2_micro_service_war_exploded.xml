@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="12-spring-cloud-oauth2-micro-service:war exploded">
+    <output-path>$PROJECT_DIR$/target/12-spring-cloud-oauth2-micro-service</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="12-spring-cloud-oauth2-micro-service" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/12-spring-cloud-oauth2-micro-service/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="12-spring-cloud-oauth2-micro-service/web/Web" />
+    </root>
+  </artifact>
+</component>

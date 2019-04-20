@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="12-spring-cloud-oauth2-micro-service" />
+        <module name="client-service" />
+        <module name="oauth-service" />
+        <module name="server-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="12-spring-cloud-oauth2-micro-service" target="1.7" />
+      <module name="client-service" target="1.8" />
+      <module name="oauth-service" target="1.8" />
+      <module name="server-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

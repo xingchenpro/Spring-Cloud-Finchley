@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="12-spring-cloud-oauth2-micro-service:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="12-spring-cloud-oauth2-micro-service.war">
+      <element id="artifact" artifact-name="12-spring-cloud-oauth2-micro-service:war exploded" />
+    </root>
+  </artifact>
+</component>

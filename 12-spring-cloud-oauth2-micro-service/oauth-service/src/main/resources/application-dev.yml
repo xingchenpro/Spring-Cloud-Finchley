@@ -1,0 +1,26 @@
+spring:
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: roof
+      url: jdbc:mysql://localhost:3306/authoritycertificationservice?useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true
+
+# 端口设置
+server:
+  port: 8763
+  servlet:
+    session:
+      timeout: 600
+
+# 集成Mybatis
+mybatis:
+  # Mybatis映射
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.hly.oauthservice.entity
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+

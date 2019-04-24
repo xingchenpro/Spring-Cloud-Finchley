@@ -1,0 +1,4 @@
+1.token 过期时间
+DefaultTokenServices
+private int refreshTokenValiditySeconds = 2592000;
+private int accessTokenValiditySeconds = 43200; 12小时

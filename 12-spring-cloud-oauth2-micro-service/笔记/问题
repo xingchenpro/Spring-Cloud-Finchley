@@ -8,3 +8,7 @@
 }
 解决：配置允许表单验证
 oauthServer.allowFormAuthenticationForClients();
+
+2.如果把授权服务也设置为资源服务，Security 的login不能使用
+
+3.token的过期时间

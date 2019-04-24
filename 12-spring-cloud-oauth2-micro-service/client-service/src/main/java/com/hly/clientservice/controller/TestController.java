@@ -1,15 +1,12 @@
-package com.hly.oauthservice.controller;
+package com.hly.clientservice.controller;
 
-import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpSession;
 import java.security.Principal;
 
 /**
@@ -17,29 +14,11 @@ import java.security.Principal;
  * @github :https://github.com/huangliangyun
  * @blog :http://www.javahly.com/
  * @CSDN :blog.csdn.net/Sirius_hly
- * @date :2019/4/20
+ * @date :2019/4/24
  */
-
 @RestController
-public class UserController {
+public class TestController {
 
-    @RequestMapping(value = "/current", method = RequestMethod.GET)
-    public Principal getUser(Principal principal) {
-        return principal;
-    }
-
-
-    //@RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String login() {
-        return "login";
-    }
-
-    @RequestMapping(value = "/session", method = RequestMethod.GET)
-    public String session(HttpServletRequest request){
-        if(request.getSession()!=null)
-            System.err.println(request.getSession());
-        return String.valueOf(request.getSession());
-    }
 
     @RequestMapping("/hi")
     public String hi(){
@@ -59,15 +38,18 @@ public class UserController {
     }
 
     @GetMapping("/getPrinciple")
-    public Object getPrinciple(OAuth2Authentication oAuth2Authentication, Principal principal,
+    public OAuth2Authentication getPrinciple(OAuth2Authentication oAuth2Authentication, Principal principal,
                                              Authentication authentication){
+
         System.err.println(oAuth2Authentication.getUserAuthentication().getAuthorities().toString());
         System.err.println(oAuth2Authentication.toString());
         System.err.println("principal.toString()"+principal.toString());
         System.err.println("principal.getName()"+principal.getName());
         System.err.println("authentication:"+authentication.getAuthorities().toString());
 
-        return authentication.getAuthorities().toString();
+        return oAuth2Authentication;
 
     }
+
+
 }

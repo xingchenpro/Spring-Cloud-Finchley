@@ -31,23 +31,15 @@ import javax.sql.DataSource;
 public class OAuth2ServerConfig {
 
     //资源服务
-    @Configuration
-    @EnableResourceServer
+    //@Configuration
+    //@EnableResourceServer
     protected static class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
-
-        @Override
-        public void configure(ResourceServerSecurityConfigurer resources) {
-            //resources
-            //标记以指示在这些资源上仅允许基于令牌的身份验证
-                   // .resourceId(ARTICLE_RESOURCE_ID).stateless(true)
-                   // .resourceId(VIDEO_RESOURCE_ID).stateless(true);
-        }
         @Override
         public void configure(HttpSecurity http) throws Exception {
             //访问控制，必须通过token认证过后才可以访问
             http
                     .authorizeRequests()
-                    .antMatchers("/article/**","/video/**").authenticated();
+                    .antMatchers("/login").permitAll();
         }
     }
 
@@ -64,6 +56,7 @@ public class OAuth2ServerConfig {
 
         //JdbcTokenStore tokenStore=new JdbcTokenStore(dataSource);
 
+        //配置开启密码类型的验证
         @Autowired
         @Qualifier("authenticationManagerBean")
         private AuthenticationManager authenticationManager;
@@ -71,8 +64,8 @@ public class OAuth2ServerConfig {
         @Autowired
         private UserService userServiceDetail;
 
+        //配置客户端的基本信息
         @Override
-
         public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 
             String finalSecret = new BCryptPasswordEncoder().encode("123456");
@@ -91,20 +84,22 @@ public class OAuth2ServerConfig {
                     .authorizedGrantTypes("password", "refresh_token")
                     .scopes("server")
                     .authorities("oauth2")
-                    .secret(finalSecret);
+                    .secret(finalSecret)
+                    .accessTokenValiditySeconds(2*3600);//2小时过期
         }
 
         @Override
         public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
             endpoints
-                    .tokenStore(tokenStore)
+                    .tokenStore(tokenStore)//Token的存储方式
                     //.tokenStore(new RedisTokenStore(redisConnectionFactory))
-                    .authenticationManager(authenticationManager)
+                    .authenticationManager(authenticationManager)//开启密码类型的验证
                     .allowedTokenEndpointRequestMethods(HttpMethod.GET, HttpMethod.POST)
-                    .userDetailsService(userServiceDetail);
+                    .userDetailsService(userServiceDetail);//配置读取用户验证信息
             //endpoints.reuseRefreshTokens(true);
         }
 
+        //配置获取Token的策略
         @Override
         public void configure(AuthorizationServerSecurityConfigurer oauthServer) {
             //允许表单认证

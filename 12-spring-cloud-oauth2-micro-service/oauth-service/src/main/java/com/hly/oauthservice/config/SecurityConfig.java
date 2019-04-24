@@ -35,7 +35,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     UserDetailsService userService() {
         return new UserService();
     }
-
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         //从数据库中获取用户认证信息
@@ -50,10 +49,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        //http.csrf().disable();
-        http.authorizeRequests()
+        http.csrf().disable();
+        http.requestMatchers()
+                .anyRequest()
+                .and().authorizeRequests()
                 //.antMatchers("/admin/category/all").authenticated()
-                .antMatchers("/css/**", "/test","/oauth/token").permitAll()
+                .antMatchers("/css/**", "/test","/oauth/**").permitAll()
                 .antMatchers("/admin/**", "/reg").hasRole("ADMIN")///admin/**的URL都需要有超级管理员角色，如果使用.hasAuthority()方法来配置，需要在参数中加上ROLE_,如下.hasAuthority("ROLE_超级管理员")
                 .anyRequest().authenticated()//其他的路径都是登录后即可访问
                 .and().formLogin().loginPage("/login_page")
@@ -105,7 +106,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         ;
         ////logout默认的url是 /logout,如果csrf启用，则请求方式是POST，否则请求方式是GET、POST、PUT、DELETE
     }
-
     @Override
     @Bean
     public AuthenticationManager authenticationManagerBean() throws Exception {

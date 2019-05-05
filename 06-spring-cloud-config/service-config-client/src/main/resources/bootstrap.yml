@@ -8,5 +8,5 @@ spring:
   profiles:
     active: dev
 
-server:
-  port: 8770
+# server:
+  # port: 8770

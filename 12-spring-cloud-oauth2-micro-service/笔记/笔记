@@ -2,3 +2,5 @@
 DefaultTokenServices
 private int refreshTokenValiditySeconds = 2592000;
 private int accessTokenValiditySeconds = 43200; 12小时
+
+User Account and Authentication(用户账户和认证,简称 UAA).

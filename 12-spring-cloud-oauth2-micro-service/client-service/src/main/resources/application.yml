@@ -16,8 +16,12 @@ security:
       user-info-uri: http://localhost:8763/current
 
     client:
-      clientId: client_2
+    # 客户端Id ，与OAuth Provider 中的配置一一对应
+      clientId: client-service
+      # 客户端密码，与OAuth Provider 中的配置一一对应
       clientSecret: 123456
+      # 获取Token的节点
       accessTokenUri: http://localhost:8763/oauth/token
       grant-type: client_credentials,password
+      # 客户端的域
       scope: server

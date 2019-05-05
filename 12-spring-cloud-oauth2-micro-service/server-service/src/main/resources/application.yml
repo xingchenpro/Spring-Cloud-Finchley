@@ -13,7 +13,6 @@ eureka:
     serviceUrl:
     #指定服务注册中心地址
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
 spring:
   application:
     name: server-service

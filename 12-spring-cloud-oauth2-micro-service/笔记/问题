@@ -10,5 +10,7 @@
 oauthServer.allowFormAuthenticationForClients();
 
 2.如果把授权服务也设置为资源服务，Security 的login不能使用
+授权服务单独作为一个服务，登录验证服务为另一个服务
 
 3.token的过期时间
+.accessTokenValiditySeconds(2*3600);//2小时过期

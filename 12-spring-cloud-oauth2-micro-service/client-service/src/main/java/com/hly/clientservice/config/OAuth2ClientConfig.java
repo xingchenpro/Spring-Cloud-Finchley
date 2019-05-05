@@ -23,7 +23,6 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @Configuration
 public class OAuth2ClientConfig {
 
-
     //配置受保护的资源信息
     @Bean
     @ConfigurationProperties(prefix = "security.oauth2.client")
@@ -32,6 +31,7 @@ public class OAuth2ClientConfig {
     }
 
 
+    //配置过滤器，存储当前请求和上下文
     /*@Bean
     public RequestInterceptor oauth2FeignRequestInterceptor(){
         return new OAuth2FeignRequestInterceptor(new DefaultOAuth2ClientContext(), clientCredentialsResourceDetails());

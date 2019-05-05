@@ -30,14 +30,14 @@ import javax.sql.DataSource;
 @Configuration
 public class OAuth2ServerConfig {
 
-    //资源服务
+    //配置资源服务
     //@Configuration
     //@EnableResourceServer
     protected static class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
         @Override
         public void configure(HttpSecurity http) throws Exception {
-            //访问控制，必须通过token认证过后才可以访问
-            http
+            //资源访问控制，可配置必须通过token认证过后才可以访问的资源，permitAll()表示不需要token可直接访问
+                    http
                     .authorizeRequests()
                     .antMatchers("/login").permitAll();
         }
@@ -47,16 +47,16 @@ public class OAuth2ServerConfig {
     @Configuration
     @EnableAuthorizationServer
     protected static class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
-
         //@Autowired
         //@Qualifier("dataSource")
         private DataSource dataSource;
 
+        //配置将Token存储到内存
         private TokenStore tokenStore = new InMemoryTokenStore();
-
+        //配置将Token存储到数据库
         //JdbcTokenStore tokenStore=new JdbcTokenStore(dataSource);
 
-        //配置开启密码类型的验证
+        //配置开启密码类型的验证，只有配置了才会开启
         @Autowired
         @Qualifier("authenticationManagerBean")
         private AuthenticationManager authenticationManager;
@@ -66,21 +66,25 @@ public class OAuth2ServerConfig {
 
         //配置客户端的基本信息
         @Override
+        //配置客户端信息
         public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 
             String finalSecret = new BCryptPasswordEncoder().encode("123456");
 
             clients.inMemory()
-                    .withClient("client_1")
+                    //客户端Id，在Authorization Server 是唯一的
+                    .withClient("client-service")
+                    //认证类型
                     //客户端模式
-                    //.resourceIds(ARTICLE_RESOURCE_ID,VIDEO_RESOURCE_ID)
-                    .authorizedGrantTypes("client_credentials", "refresh_token")
-                    .scopes("select")//权限范围
+                    .authorizedGrantTypes("client_credentials", "password","refresh_token")
+                    //权限范围
+                    .scopes("server")
+                    //权限信息
                     .authorities("oauth2")
+                    //客户端密码
                     .secret(finalSecret)
                     //密码模式
                     .and().withClient("client_2")
-                    //.resourceIds(ARTICLE_RESOURCE_ID,VIDEO_RESOURCE_ID)
                     .authorizedGrantTypes("password", "refresh_token")
                     .scopes("server")
                     .authorities("oauth2")
@@ -89,24 +93,24 @@ public class OAuth2ServerConfig {
         }
 
         @Override
+        //配置Token节点的安全策略
         public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
             endpoints
                     .tokenStore(tokenStore)//Token的存储方式
                     //.tokenStore(new RedisTokenStore(redisConnectionFactory))
                     .authenticationManager(authenticationManager)//开启密码类型的验证
                     .allowedTokenEndpointRequestMethods(HttpMethod.GET, HttpMethod.POST)
-                    .userDetailsService(userServiceDetail);//配置读取用户验证信息
+                    //配置读取用户验证信息，获取用户认证信息的接口
+                    .userDetailsService(userServiceDetail);
             //endpoints.reuseRefreshTokens(true);
         }
 
-        //配置获取Token的策略
+
         @Override
+        //配置授权Token的节点和Token服务
         public void configure(AuthorizationServerSecurityConfigurer oauthServer) {
-            //允许表单认证
+            //配置获取Token的策略,允许表单认证，配置之后可通过表单获取Token
             oauthServer.allowFormAuthenticationForClients();
-           /* oauthServer
-                    .tokenKeyAccess("permitAll()")
-                    .checkTokenAccess("isAuthenticated()");*/
         }
     }
 }

@@ -31,7 +31,7 @@ public class TestController {
         return "hello";
     }
 
-    @PreAuthorize("hasAuthority('ROLE_STUDENT')")  //
+    //@PreAuthorize("hasAuthority('ROLE_STUDENT')")  //
     @RequestMapping("/student")
     public String student (){
         return "student";

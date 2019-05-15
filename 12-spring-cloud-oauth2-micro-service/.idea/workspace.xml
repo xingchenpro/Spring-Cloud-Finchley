@@ -164,8 +164,8 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="429" />
-    <option name="y" value="41" />
+    <option name="x" value="-17" />
+    <option name="y" value="83" />
     <option name="width" value="1819" />
     <option name="height" value="1008" />
   </component>
@@ -568,15 +568,15 @@
       <workItem from="1556769513626" duration="7000" />
       <workItem from="1556777319931" duration="257000" />
       <workItem from="1556864288092" duration="231000" />
-      <workItem from="1557062577624" duration="6411000" />
+      <workItem from="1557062577624" duration="7011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45348000" />
+    <option name="totallyTimeSpent" value="45948000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="429" y="41" width="1819" height="1008" extended-state="0" />
+    <frame x="-17" y="83" width="1819" height="1008" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />

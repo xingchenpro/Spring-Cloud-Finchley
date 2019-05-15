@@ -18,7 +18,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
+            <state relative-caret-position="1595">
               <caret line="55" column="25" lean-forward="false" selection-start-line="45" selection-start-column="1" selection-end-line="55" selection-end-column="25" />
               <folding />
             </state>
@@ -28,7 +28,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eureka-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="1015">
               <caret line="35" column="21" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="35" selection-end-column="21" />
               <folding />
             </state>
@@ -72,7 +72,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eureka-client/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
+            <state relative-caret-position="1044">
               <caret line="36" column="21" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
               <folding />
             </state>
@@ -92,7 +92,7 @@
       <file leaf-file-name="EurekaClientApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eureka-client/src/main/java/com/hly/eurekaClient/EurekaClientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="145">
               <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -186,6 +186,8 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,150 +195,11 @@
               <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
               <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hly" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hly" type="462c0819:PsiDirectoryNode" />
-              <item name="eurekaClient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hly" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hly" type="462c0819:PsiDirectoryNode" />
-              <item name="eurekaServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="01-spring-cloud-eureka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="01-spring-cloud-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="summary" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -520,11 +383,12 @@
       <workItem from="1541498914106" duration="24000" />
       <workItem from="1551868831616" duration="929000" />
       <workItem from="1555738584255" duration="1626000" />
+      <workItem from="1557150156358" duration="860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11144000" />
+    <option name="totallyTimeSpent" value="12004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="77" width="1885" height="1043" extended-state="0" />
@@ -543,7 +407,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20099393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20375483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -956,7 +820,7 @@
     <entry file="file://$PROJECT_DIR$/eureka-client/src/main/java/com/hly/eurekaClient/a.java" />
     <entry file="file://$PROJECT_DIR$/eureka-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
+        <state relative-caret-position="1044">
           <caret line="36" column="21" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
           <folding />
         </state>
@@ -964,7 +828,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="1015">
           <caret line="35" column="21" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="35" selection-end-column="21" />
           <folding />
         </state>
@@ -980,7 +844,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-client/src/main/java/com/hly/eurekaClient/EurekaClientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="145">
           <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -992,7 +856,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
+        <state relative-caret-position="1595">
           <caret line="55" column="25" lean-forward="false" selection-start-line="45" selection-start-column="1" selection-end-line="55" selection-end-column="25" />
           <folding />
         </state>

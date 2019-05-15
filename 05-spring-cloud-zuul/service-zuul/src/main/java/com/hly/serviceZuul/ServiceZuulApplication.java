@@ -11,7 +11,6 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableEurekaClient
 @EnableDiscoveryClient
 public class ServiceZuulApplication {
-
 	/**
 	 * 路由网关
 	 * 访问：http://localhost:8769/api-a/hi?token=hly ; hi hly，I am from port: 8763

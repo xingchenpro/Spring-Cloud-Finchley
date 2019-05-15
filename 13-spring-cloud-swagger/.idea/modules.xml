@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/13-spring-cloud-swagger.iml" filepath="$PROJECT_DIR$/13-spring-cloud-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-client/service-client.iml" filepath="$PROJECT_DIR$/service-client/service-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-server/service-server.iml" filepath="$PROJECT_DIR$/service-server/service-server.iml" />
+    </modules>
+  </component>
+</project>

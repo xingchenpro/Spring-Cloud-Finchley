@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="13-spring-cloud-swagger" />
+        <module name="service-client" />
+        <module name="service-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="13-spring-cloud-swagger" target="1.8" />
+      <module name="service-client" target="1.8" />
+      <module name="service-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

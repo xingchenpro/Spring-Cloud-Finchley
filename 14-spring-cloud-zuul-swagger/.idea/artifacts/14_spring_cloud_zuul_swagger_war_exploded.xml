@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="14-spring-cloud-zuul-swagger:war exploded">
+    <output-path>$PROJECT_DIR$/target/14-spring-cloud-zuul-swagger</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="14-spring-cloud-zuul-swagger" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/14-spring-cloud-zuul-swagger/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="14-spring-cloud-zuul-swagger/web/Web" />
+    </root>
+  </artifact>
+</component>

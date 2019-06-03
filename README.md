@@ -31,3 +31,6 @@
 #### [7.SpringCloud | 高可用配置中心(Config)](http://www.edrawsoft.cn/viewer/public/s/6b0bc198302204)
 #### [8.SpringCloud | 服务链路追踪(Sleuth)](http://www.edrawsoft.cn/viewer/public/s/7d640323938379)
 
+## 使用说明：
+每一个文件夹为一个项目，是每一种组件的实例，下载或克隆到本地后，Maven环境下，使用IDEA直接打开文件夹即可运行。
+

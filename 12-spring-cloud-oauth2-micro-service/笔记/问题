@@ -14,3 +14,11 @@ oauthServer.allowFormAuthenticationForClients();
 
 3.token的过期时间
 .accessTokenValiditySeconds(2*3600);//2小时过期
+
+4.
+{
+    "timestamp": "2019-05-31T05:59:47.702+0000",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "pre:OAuth2TokenRelayFilter"
+}

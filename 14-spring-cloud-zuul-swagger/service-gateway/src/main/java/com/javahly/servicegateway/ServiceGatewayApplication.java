@@ -1,23 +1,23 @@
 package com.javahly.servicegateway;
 
 
+import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import springfox.documentation.swagger.web.SwaggerResource;
 import springfox.documentation.swagger.web.SwaggerResourcesProvider;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * 路由网关
- * 访问：http://localhost:8769/service-user/users ;
- * 访问: http://localhost:8769/service-blog/blogs ;
+ * 访问：http://localhost:8769/service-user/user-api/users ;
+ * 访问: http://localhost:8769/service-blog/blog-api/blogs ;
  * swagger
  * http://localhost:8769/swagger-ui.html
  * @param
@@ -25,12 +25,13 @@ import java.util.List;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableZuulProxy
-@EnableSwagger2
+@EnableSwagger2Doc
 public class ServiceGatewayApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ServiceGatewayApplication.class, args);
 	}
+
 
 	@Component
 	@Primary

@@ -8,6 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
+//让注册中心扫描到，EnableEurekaClient只适用于 eureka,@EnableDiscoveryClient 可以是其他注册中心
 @EnableDiscoveryClient
 @EnableFeignClients
 public class EurekaFeignApplication {

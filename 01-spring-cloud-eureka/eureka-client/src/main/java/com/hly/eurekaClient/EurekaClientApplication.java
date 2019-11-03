@@ -17,7 +17,6 @@ public class EurekaClientApplication {
 		SpringApplication.run(EurekaClientApplication.class, args);
 	}
 
-
     @Value("${server.port}")
     String port;
 
@@ -25,5 +24,4 @@ public class EurekaClientApplication {
     public String home(@RequestParam(value = "name", defaultValue = "hly") String name) {
         return "hi " + name + " ,i am from port:" + port;
     }
-
 }

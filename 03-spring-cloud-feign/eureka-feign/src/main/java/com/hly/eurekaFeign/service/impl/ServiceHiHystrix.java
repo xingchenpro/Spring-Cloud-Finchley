@@ -1,6 +1,6 @@
 package com.hly.eurekaFeign.service.impl;
 
-import com.hly.eurekaFeign.service.SchedualServiceHi;
+import com.hly.eurekaFeign.service.ServiceHi;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @date :2018/10/17
  */
 @Component
-public class ServiceHiHystrix implements SchedualServiceHi {
+public class ServiceHiHystrix implements ServiceHi {
     @Override
     public String sayHiFromClientOne(String name) {
         return "sorry"+name;

@@ -13,9 +13,11 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @blog :blog.csdn.net/Sirius_hly
  * @date :2018/10/16
  */
+
+//@FeignClient(value = "eureka-client",fallback = ServiceHiHystrix.class)
 //服务名指定调用哪个服务
-@FeignClient(value = "eureka-client",fallback = ServiceHiHystrix.class)
-public interface SchedualServiceHi {
+@FeignClient(value = "eureka-client")
+public interface ServiceHi {
     //这里的映射名和需要调用的服务的映射名一样
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     String sayHiFromClientOne(@RequestParam(value = "name") String name);

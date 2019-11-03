@@ -15,6 +15,9 @@ public class ServiceZuulApplication {
 	 * 路由网关
 	 * 访问：http://localhost:8769/api-a/hi?token=hly ; hi hly，I am from port: 8763
 	 * 访问: http://localhost:8769/api-b/hello?token=hly ; hello hly,I am from port: 8762
+	 *
+	 * 访问：http://localhost:8769/api-hi/hi
+	 * 访问：http://localhost:8769/api-hello
 	 * @param args
 	 */
 	public static void main(String[] args) {

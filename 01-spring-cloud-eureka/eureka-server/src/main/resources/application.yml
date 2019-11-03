@@ -6,15 +6,16 @@ eureka:
     hostname: localhost
   client:
   #默认情况下eureka server也是一个eureka client
-  #表明自己是一个eureka server.
+  #表明自己是一个eureka server,不会需要注册自己
     registerWithEureka: false
-    #表明自己是一个eureka server.
+    #表明自己是一个eureka server，不需要从eureka上获取注册信息
     fetchRegistry: false
     serviceUrl:
     #指定服务注册中心地址
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 spring:
   application:
+  # 注册中心的名称
     name: eureka-server
 
 

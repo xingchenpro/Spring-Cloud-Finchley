@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="15-spring-cloud-lcn:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="15-spring-cloud-lcn.war">
-      <element id="artifact" artifact-name="15-spring-cloud-lcn:war exploded" />
-    </root>
-  </artifact>
-</component>

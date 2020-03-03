@@ -4,10 +4,14 @@ spring:
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/share
-  profiles:
-    active: native
+        git:
+          # git环境地址
+          uri: https://gitee.com/Sirius_hly/respo.git
+          # 搜索目录
+          search-paths:
+            - share
+      # 读取分支
+      label: master
   application:
     name: service-config-server
 

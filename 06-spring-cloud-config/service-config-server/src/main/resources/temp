@@ -21,3 +21,16 @@ spring:
           default-label: master
   application:
     name: config-server
+
+----
+
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/share
+  profiles:
+    active: native
+  application:
+    name: service-config-server

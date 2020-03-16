@@ -11,5 +11,4 @@ public class TxlcnTmServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TxlcnTmServiceApplication.class, args);
 	}
-
 }

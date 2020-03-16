@@ -38,12 +38,12 @@ public class OrderController {
 
     @RequestMapping(value = "/order/{goodsId}")
     @Transactional
-    @LcnTransaction //分布式事务注解
+    @LcnTransaction
     public List<Order> addUser(@PathVariable("goodsId")Integer id) {
         indexMapper.addOrder(id);
-        int a = 1/0;
         //添加订单，调用库存减库存
         restTemplate.getForObject("http://localhost:8883/stock/"+id, String.class);
+        int a = 1/0;
         return indexMapper.getOrders();
     }
 }

@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+        # 根据服务ID查找
+          enabled: true
+      routes:
+      - id: user-route
+        # uri: http://localhost:8883
+        uri: lb://user-service
+        predicates:
+        - Path=/user-service/**
+        filters:
+        # 去掉前缀，转发之前忽略一个前缀，将 /user-service 去掉
+        - StripPrefix=1
+
+eureka:
+ client:
+   serviceUrl:
+    defaultZone: http://127.0.0.1:8761/eureka/
+server:
+  port: 8889
+
